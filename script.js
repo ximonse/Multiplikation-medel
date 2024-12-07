@@ -139,7 +139,7 @@ function checkAnswer() {
   
   // Beräkna svarstid
   const timeSpent = new Date() - questionStartTime;
-  const isTooSlow = timeSpent > 10000; // 5 sekunder
+  const isTooSlow = timeSpent > 5000; // 5 sekunder
 
   if (answer === question.answer) {
     // Alltid visa "Rätt!" när svaret är korrekt
